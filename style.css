@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f9fafc;
+
+}
+
+.navbar {
+  display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+background-color: #fff;
+}
+
+.Zomalogo {
+  width: 100px;
+}
+
+.logo {
+  width: 100%
+}
+
+.button_tab {
+background-image: linear-gradient(
+  to right,
+  #ff512f 0%,
+  #dd2476 51%,
+  #ff512f 100%
+  );
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.button_tab:hover {
+  border: 2px solid #DB005B;
+  background-position: center right;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Zomalogo {
+    width: 150px;
+  }
+
+  .button_tab {
+    padding: 15px;
+    font-size: 10px;
+  }
+}
