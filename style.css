@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Merriweather', serif;
-  background-color: #f9fafc;
+  background-color: #ebf2ff;
 
 }
 
@@ -45,14 +45,86 @@ background-image: linear-gradient(
   cursor: pointer;
 }
 
+.container {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.explore_menu_text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
 @media (min-width: 768px) {
   .navbar {
-    justify-content: space-between;
+    justify-content: space-between;        //Tablet (ipad) view //
     padding: 10px 30px;
   }
+
+.explore_menu_bg {
+  position: absolute;
+}
+
+.section2_container {
+  position: relative;
+}
+
+  .section1_container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+.section2_lists {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+#pizza_style {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
 }
 
 @media (min-width: 1024px) {
+
+  .explore_menu_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+      );
+      z-index: -3;
+      transform: skewY(-4deg);
+      padding-top: 25px;
+  }
+
+  .section2_container {
+    position: relative;
+  }
+
+  .explore_menu_text {
+    font-size: 48px;
+  }
+
+  .container {
+    max-width: 70%;
+
+  }
+
   .Zomalogo {
     width: 150px;
   }
@@ -60,4 +132,55 @@ background-image: linear-gradient(
     padding: 15px;
     font-size: 10px;
   }
+
+  .test_within {
+    width: 100%;
+  }
+
+  .writeup {
+    font-size: 50px;
+  }
+
+  .section2_lists {
+    gap: 25px;
+
+}
+
+.section1_container {
+padding: 10px;
+align-items: center;
+}
+
+.section1_logo {
+  width: 100%;
+}
+
+.logo1 {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+
+.test_within {
+  font-weight: 600;
+  font-size: 30px;
+  padding: 20px 0px;
+}
+
+.food_card {
+  background-color: #F9F5F6;
+}
+
+.foodcard_image_container {
+  width: 100%;
+}
+
+.foodimage {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.foodcard_description {
+  padding: 8px;
 }
