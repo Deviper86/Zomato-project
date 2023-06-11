@@ -6,7 +6,6 @@
 body {
   font-family: 'Merriweather', serif;
   background-color: #ebf2ff;
-
 }
 
 .navbar {
@@ -67,6 +66,7 @@ background-image: linear-gradient(
 
   .section1_logo {
     width: 100%;
+    position: relative;
   }
 
   .logo1 {
@@ -75,11 +75,20 @@ background-image: linear-gradient(
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
   }
 
+.logo1_bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  z-index: -3;
+  position: absolute;
+}
 
   .test_within {
     font-weight: 600;
     font-size: 30px;
     padding: 20px 0px;
+    margin-top: 50px;
   }
 
   .food_card {
@@ -99,8 +108,55 @@ background-image: linear-gradient(
     padding: 8px;
   }
 
+.view_more_button {
+  width: 100%;
+  margin-top: 30px;
+}
 
+.button_tab2 {
+background-image: linear-gradient(
+  to right,
+  #ff512f 0%,
+  #dd2476 51%,
+  #ff512f 100%
+  );
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: 600;
+  width: 100%;
+  height: 30%;
 
+}
+
+.video_footage {
+  width: 100%;
+  position: relative;
+}
+
+.video_footage_text {
+  margin-top: 20px;
+}
+
+.video {
+  width: 100%;
+}
+
+.video_footage_bg {
+  top: 10px;
+  left: 9px;
+  width: 95%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+    z-index: -3;
+  position: absolute;
+}
 
 @media (min-width: 768px) {
   .navbar {
@@ -109,6 +165,19 @@ background-image: linear-gradient(
   }
 
 .explore_menu_bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+    z-index: -3;
+    transform: skewY(-4deg);
+    padding-top: 25px;
   position: absolute;
 }
 
@@ -125,7 +194,7 @@ background-image: linear-gradient(
 .section2_lists {
   margin-top: 30px;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 #pizza_style {
@@ -135,8 +204,8 @@ background-image: linear-gradient(
 
 }
 
-@media (min-width: 1024px) {
 
+@media (min-width: 1024px) {
   .explore_menu_bg {
     position: absolute;
     top: 0;
